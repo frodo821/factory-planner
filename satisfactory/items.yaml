@@ -1,0 +1,329 @@
+items:
+  water:
+    name: Water
+    stack_size: 1
+    type: fluid
+  crude_oil:
+    name: Crude Oil
+    stack_size: 1
+    type: fluid
+  heavy_oil_residue:
+    name: Heavy Oil Residue
+    stack_size: 1
+    type: fluid
+  fuel:
+    name: Fuel
+    stack_size: 1
+    type: fluid
+  turbofuel:
+    name: Turbofuel
+    stack_size: 1
+    type: fluid
+  liquid_biofuel:
+    name: Liquid Biofuel
+    stack_size: 1
+    type: fluid
+  alumina_solution:
+    name: Alumina Solution
+    stack_size: 1
+    type: fluid
+  sulfuric_acid:
+    name: Sulfuric Acid
+    stack_size: 1
+    type: fluid
+  nitrogen_gas:
+    name: Nitrogen Gas
+    stack_size: 1
+    type: fluid
+  nitric_acid:
+    name: Nitric Acid
+    stack_size: 1
+    type: fluid
+
+  alien_organs:
+    name: Alien Organs
+    stack_size: 50
+  
+  bauxite:
+    name: Bauxite
+    stack_size: 100
+  biomass:
+    name: Biomass
+    stack_size: 200
+  solid_biofuel:
+    name: Solid Biofuel
+    stack_size: 200
+  caterium_ore:
+    name: Caterium Ore
+    stack_size: 100
+  coal:
+    name: Coal
+    stack_size: 100
+  compacted_coal:
+    name: Compacted Coal
+    stack_size: 100
+  copper_ore:
+    name: Copper Ore
+    stack_size: 100
+  flower_petals:
+    name: Flower Petals
+    stack_size: 500
+  iron_ore:
+    name: Iron Ore
+    stack_size: 100
+  leaves:
+    name: Leaves
+    stack_size: 500
+  limestone:
+    name: Limestone
+    stack_size: 100
+  mycelia:
+    name: Mycelia
+    stack_size: 200
+  raw_quartz:
+    name: Raw Quartz
+    stack_size: 100
+  sulfur:
+    name: Sulfur
+    stack_size: 100
+  uranium:
+    name: Uranium
+    stack_size: 100
+  wood:
+    name: Wood
+    stack_size: 200
+
+  adaptive_control_unit:
+    name: Adaptive Control Unit
+    stack_size: 50
+  ai_limiter:
+    name: AI Limiter
+    stack_size: 100
+  alclad_aluminum_sheet:
+    name: Alclad Aluminum Sheet
+    stack_size: 200
+  aluminum_casing:
+    name: Aluminum Casing
+    stack_size: 200
+  aluminum_ingot:
+    name: Aluminum Ingot
+    stack_size: 100
+  aluminum_scrap:
+    name: Aluminum Scrap
+    stack_size: 500
+  assembly_director_system:
+    name: Assembly Director System
+    stack_size: 50
+  automated_wiring:
+    name: Automated Wiring
+    stack_size: 50
+  battery:
+    name: Battery
+    stack_size: 200
+  beacon:
+    name: Beacon
+    stack_size: 100
+  black_powder:
+    name: Black Powder
+    stack_size: 200
+  cable:
+    name: Cable
+    stack_size: 200
+  caterium_ingot:
+    name: Caterium Ingot
+    stack_size: 100
+  circuit_board:
+    name: Circuit Board
+    stack_size: 200
+  computer:
+    name: Computer
+    stack_size: 50
+  concrete:
+    name: Concrete
+    stack_size: 500
+  cooling_system:
+    name: Cooling System
+    stack_size: 100
+  copper_ingot:
+    name: Copper Ingot
+    stack_size: 100
+  copper_powder:
+    name: Copper Powder
+    stack_size: 500
+  copper_sheet:
+    name: Copper Sheet
+    stack_size: 200
+  crystal_oscillator:
+    name: Crystal Oscillator
+    stack_size: 100
+  electromagnetic_control_rod:
+    name: Electromagnetic Control Rod
+    stack_size: 100
+  empty_canister:
+    name: Empty Canister
+    stack_size: 100
+  packaged_alumina_solution:
+    name: Packaged Alumina Solution
+    stack_size: 100
+  packaged_oil:
+    name: Packaged Oil
+    stack_size: 100
+  packaged_fuel:
+    name: Packaged Fuel
+    stack_size: 100
+  packaged_heavy_oil_residue:
+    name: Packaged Heavy Oil Residue
+    stack_size: 100
+  packaged_liquid_biofuel:
+    name: Packaged Liquid Biofuel
+    stack_size: 100
+  packaged_sulfuric_acid:
+    name: Packaged Sulfuric Acid
+    stack_size: 100
+  packaged_turbofuel:
+    name: Packaged Turbofuel
+    stack_size: 100
+  packaged_water:
+    name: Packaged Water
+    stack_size: 100
+  empty_fluid_tank:
+    name: Empty Fluid Tank
+    stack_size: 100
+  packaged_nitric_acid:
+    name: Packaged Nitric Acid
+    stack_size: 100
+  packaged_nitrogen_gas:
+    name: Packaged Nitrogen Gas
+    stack_size: 100
+  encased_industrial_beam:
+    name: Encased Industrial Beam
+    stack_size: 100
+  encased_plutonium_cell:
+    name: Encased Plutonium Cell
+    stack_size: 200
+  encased_uranium_cell:
+    name: Encased Uranium Cell
+    stack_size: 200
+  fabric:
+    name: Fabric
+    stack_size: 100
+  fused_modular_frame:
+    name: Fused Modular Frame
+    stack_size: 50
+  heat_sink:
+    name: Heat Sink
+    stack_size: 100
+  heavy_modular_frame:
+    name: Heavy Modular Frame
+    stack_size: 50
+  high_speed_connector:
+    name: High-Speed Connector
+    stack_size: 100
+  iron_ingot:
+    name: Iron Ingot
+    stack_size: 100
+  iron_plate:
+    name: Iron Plate
+    stack_size: 200
+  iron_rod:
+    name: Iron Rod
+    stack_size: 200
+  modular_engine:
+    name: Modular Engine
+    stack_size: 50
+  modular_frame:
+    name: Modular Frame
+    stack_size: 50
+  motor:
+    name: Motor
+    stack_size: 50
+  non_fissile_uranium:
+    name: Non-Fissile Uranium
+    stack_size: 500
+  nuclear_pasta:
+    name: Nuclear Pasta
+    stack_size: 50
+  petroleum_coke:
+    name: Petroleum Coke
+    stack_size: 200
+  plastic:
+    name: Plastic
+    stack_size: 200
+  plutonium_fuel_rod:
+    name: Plutonium Fuel Rod
+    stack_size: 50
+  plutonium_pellet:
+    name: Plutonium Pellet
+    stack_size: 100
+  plutonium_waste:
+    name: Plutonium Waste
+    stack_size: 500
+  polymer_resin:
+    name: Polymer Resin
+    stack_size: 200
+  pressure_conversion_cube:
+    name: Pressure Conversion Cube
+    stack_size: 50
+  quantum_computer:
+    name: Quantum Computer
+    stack_size: 50
+  quartz_crystal:
+    name: Quartz Crystal
+    stack_size: 200
+  quickwire:
+    name: Quickwire
+    stack_size: 500
+  radio_control_unit:
+    name: Radio Control Unit
+    stack_size: 50
+  reinforced_iron_plate:
+    name: Reinforced Iron Plate
+    stack_size: 100
+  rotor:
+    name: Rotor
+    stack_size: 100
+  rubber:
+    name: Rubber
+    stack_size: 200
+  screw:
+    name: Screw
+    stack_size: 500
+  silica:
+    name: Silica
+    stack_size: 200
+  smart_plating:
+    name: Smart Plating
+    stack_size: 50
+  stator:
+    name: Stator
+    stack_size: 100
+  steel_beam:
+    name: Steel Beam
+    stack_size: 200
+  steel_ingot:
+    name: Steel Ingot
+    stack_size: 100
+  steel_pipe:
+    name: Steel Pipe
+    stack_size: 200
+  supercomputer:
+    name: Supercomputer
+    stack_size: 50
+  superposition_oscillator:
+    name: Superposition Oscillator
+    stack_size: 100
+  turbo_motor:
+    name: Turbo Motor
+    stack_size: 50
+  uranium_fuel_rod:
+    name: Uranium Fuel Rod
+    stack_size: 50
+  uranium_waste:
+    name: Uranium Waste
+    stack_size: 500
+  versatile_framework:
+    name: Versatile Framework
+    stack_size: 50
+  wire:
+    name: Wire
+    stack_size: 500

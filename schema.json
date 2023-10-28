@@ -1,0 +1,252 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Recipes and Factories definition schema of Satisfactory",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "item_io": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "ingredient type ID"
+        },
+        "per_minute": {
+          "type": "number",
+          "description": "number of maximum required items per minute per facility"
+        },
+        "per_cycle": {
+          "type": "number",
+          "description": "number of items per cycle per facility"
+        }
+      },
+      "required": [
+        "type",
+        "per_minute"
+      ]
+    }
+  },
+  "properties": {
+    "items": {
+      "type": "object",
+      "properties": {},
+      "description": "items definition",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "item definition. The key is the item ID.",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "item name"
+          },
+          "stack_size": {
+            "type": "number",
+            "description": "item stack size"
+          },
+          "type": {
+            "oneOf": [
+              {
+                "const": "solid",
+                "description": "solid item that can be transported by conveyor belts."
+              },
+              {
+                "const": "fluid",
+                "description": "fluid item that can be transported by pipes."
+              }
+            ],
+            "default": "solid",
+            "description": "item type"
+          }
+        },
+        "required": [
+          "name",
+          "stack_size"
+        ]
+      }
+    },
+    "recipes": {
+      "type": "object",
+      "properties": {},
+      "description": "recipes definition",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "recipe definition. The key is the recipe ID. Note (per_minute / per_cycle) must be the same value for each ingredient / output of a recipe and (time / 60).",
+        "properties": {
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/item_io"
+            },
+            "description": "ingredients required to craft this recipe"
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/item_io"
+            },
+            "description": "outputs of this recipe"
+          },
+          "allowed_facilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "allowed facility ID"
+            },
+            "description": "IDs of facilities that can craft this recipe. If unspecified, all facilities can craft this recipe."
+          },
+          "required_power": {
+            "type": "number",
+            "description": "required power of this recipe",
+            "default": 0
+          },
+          "name": {
+            "type": "string",
+            "description": "recipe name, default to recipe ID if unspecified."
+          },
+          "time": {
+            "type": "number",
+            "description": "standard crafting time to complete this recipe in seconds. If unspecified, the crafting time will be calculated from the ingredients and outputs."
+          }
+        },
+        "required": [
+          "ingredients",
+          "outputs"
+        ]
+      }
+    },
+    "node_defs": {
+      "type": "object",
+      "description": "node type definitions",
+      "properties": {},
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "storage",
+                "description": "storage node"
+              },
+              "slots": {
+                "type": "number",
+                "description": "number of slots of this storage node"
+              },
+              "name": {
+                "type": "string",
+                "description": "name of this storage node"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "slots",
+              "name"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "constructor",
+                "description": "constructor node"
+              },
+              "name": {
+                "type": "string",
+                "description": "name of this constructor node"
+              },
+              "production_rate": {
+                "type": "number",
+                "description": "production rate of this constructor node",
+                "default": 1
+              },
+              "required_power": {
+                "type": "number",
+                "description": "required power of this constructor node",
+                "default": 0
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "name"
+            ]
+          }
+        ]
+      }
+    },
+    "factory": {
+      "type": "object",
+      "description": "factory definition",
+      "properties": {
+        "sources": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": {
+            "$ref": "#/definitions/item_io"
+          },
+          "description": "item source of this factory"
+        },
+        "sinks": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": {
+            "$ref": "#/definitions/item_io"
+          },
+          "description": "item sinks (e.g. Biomass Burners) of this factory"
+        },
+        "nodes": {
+          "type": "object",
+          "properties": {},
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "node type ID"
+              },
+              "incoming": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "incoming node ID"
+                },
+                "description": "incoming node IDs"
+              },
+              "outgoing": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "outgoing node ID"
+                },
+                "description": "outgoing node IDs"
+              },
+              "recipe": {
+                "type": "string",
+                "description": "recipe ID"
+              },
+              "production_rate": {
+                "type": "number",
+                "description": "production rate of this constructor node",
+                "default": 1
+              }
+            },
+            "required": [
+              "type",
+              "incoming",
+              "outgoing"
+            ]
+          }
+        }
+      },
+      "required": [
+        "sources",
+        "sinks",
+        "nodes"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

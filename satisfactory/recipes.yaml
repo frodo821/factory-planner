@@ -1,0 +1,2048 @@
+recipes:
+  adaptive_control_unit:
+    ingredients:
+      - type: circuit_board
+        per_minute: 5
+      - type: heavy_modular_frame
+        per_minute: 1
+      - type: computer
+        per_minute: 1
+      - type: automated_wiring
+        per_minute: 7.5
+    outputs:
+      - type: adaptive_control_unit
+        per_minute: 1
+
+  ai_limiter:
+    ingredients:
+      - type: copper_sheet
+        per_minute: 25
+      - type: quickwire
+        per_minute: 100
+    outputs:
+      - type: ai_limiter
+        per_minute: 5
+
+  alclad_aluminum_sheet:
+    ingredients:
+      - type: aluminum_ingot
+        per_minute: 30
+      - type: copper_ingot
+        per_minute: 10
+    outputs:
+      - type: alclad_aluminum_sheet
+        per_minute: 30
+
+  aluminum_casing:
+    ingredients:
+      - type: aluminum_ingot
+        per_minute: 90
+    outputs:
+      - type: aluminum_casing
+        per_minute: 60
+
+  alclad_casing:
+    ingredients:
+      - type: aluminum_ingot
+        per_minute: 150
+      - type: copper_ingot
+        per_minute: 75
+    outputs:
+      - type: aluminum_casing
+        per_minute: 112.5
+
+  aluminum_ingot:
+    ingredients:
+      - type: aluminum_scrap
+        per_minute: 90
+      - type: silica
+        per_minute: 75
+    outputs:
+      - type: aluminum_ingot
+        per_minute: 60
+
+  pure_aluminum_ingot:
+    ingredients:
+      - type: aluminum_scrap
+        per_minute: 60
+    outputs:
+      - type: aluminum_ingot
+        per_minute: 30
+
+  aluminum_scrap:
+    ingredients:
+      - type: alumina_solution
+        per_minute: 240
+      - type: coal
+        per_minute: 120
+    outputs:
+      - type: aluminum_scrap
+        per_minute: 360
+      - type: water
+        per_minute: 120
+
+  electrode_aluminum_scrap:
+    ingredients:
+      - type: alumina_solution
+        per_minute: 180
+      - type: petroleum_coke
+        per_minute: 60
+    outputs:
+      - type: aluminum_scrap
+        per_minute: 300
+      - type: water
+        per_minute: 105
+
+  instant_scrap:
+    ingredients:
+      - type: bauxite
+        per_minute: 150
+      - type: coal
+        per_minute: 100
+      - type: sulfuric_acid
+        per_minute: 50
+      - type: water
+        per_minute: 60
+    outputs:
+      - type: aluminum_scrap
+        per_minute: 300
+      - type: water
+        per_minute: 50
+
+  assembly_director_system:
+    ingredients:
+      - type: adaptive_control_unit
+        per_minute: 1.5
+      - type: supercomputer
+        per_minute: 0.75
+    outputs:
+      - type: assembly_director_system
+        per_minute: 0.75
+
+  automated_wiring:
+    ingredients:
+      - type: stator
+        per_minute: 2.5
+      - type: cable
+        per_minute: 50
+    outputs:
+      - type: automated_wiring
+        per_minute: 2.5
+
+  automated_speed_wiring:
+    ingredients:
+      - type: stator
+        per_minute: 3.75
+      - type: wire
+        per_minute: 75
+      - type: high_speed_connector
+        per_minute: 1.875
+    outputs:
+      - type: automated_wiring
+        per_minute: 7.5
+
+  battery:
+    ingredients:
+      - type: sulfuric_acid
+        per_minute: 50
+      - type: alumina_solution
+        per_minute: 40
+      - type: aluminum_casing
+        per_minute: 20
+    outputs:
+      - type: battery
+        per_minute: 20
+      - type: water
+        per_minute: 30
+
+  classic_battery:
+    ingredients:
+      - type: sulfur
+        per_minute: 45
+      - type: alclad_aluminum_sheet
+        per_minute: 52.5
+      - type: plastic
+        per_minute: 60
+      - type: wire
+        per_minute: 90
+    outputs:
+      - type: battery
+        per_minute: 30
+
+  beacon:
+    ingredients:
+      - type: iron_plate
+        per_minute: 22.5
+        per_cycle: 3
+      - type: iron_rod
+        per_minute: 7.5
+        per_cycle: 1
+      - type: cable
+        per_minute: 15
+        per_cycle: 2
+      - type: wire
+        per_minute: 112.5
+        per_cycle: 15
+    outputs:
+      - type: beacon
+        per_minute: 7.5
+        per_cycle: 1
+
+  crystal_beacon:
+    ingredients:
+      - type: steel_beam
+        per_minute: 2
+        per_cycle: 4
+      - type: steel_pipe
+        per_minute: 8
+        per_cycle: 16
+      - type: crystal_oscillator
+        per_minute: 0.5
+        per_cycle: 1
+    outputs:
+      - type: beacon
+        per_minute: 10
+        per_cycle: 20
+
+  black_powder:
+    ingredients:
+      - type: coal
+        per_minute: 15
+      - type: sulfur
+        per_minute: 15
+    outputs:
+      - type: black_powder
+        per_minute: 30
+
+  fine_black_powder:
+    ingredients:
+      - type: coal
+        per_minute: 3.75
+      - type: sulfur
+        per_minute: 7.5
+    outputs:
+      - type: black_powder
+        per_minute: 15
+
+  cable:
+    ingredients:
+      - type: wire
+        per_minute: 60
+    outputs:
+      - type: cable
+        per_minute: 30
+
+  coated_cable:
+    ingredients:
+      - type: wire
+        per_minute: 37.5
+      - type: heavy_oil_residue
+        per_minute: 15
+    outputs:
+      - type: cable
+        per_minute: 67.5
+
+  insulated_cable:
+    ingredients:
+      - type: wire
+        per_minute: 45
+      - type: rubber
+        per_minute: 30
+    outputs:
+      - type: cable
+        per_minute: 100
+
+  quickwire_cable:
+    ingredients:
+      - type: quickwire
+        per_minute: 7.5
+      - type: rubber
+        per_minute: 5
+    outputs:
+      - type: cable
+        per_minute: 27.5
+
+  caterium_ingot:
+    ingredients:
+      - type: caterium_ore
+        per_minute: 45
+    outputs:
+      - type: caterium_ingot
+        per_minute: 15
+
+  pure_caterium_ingot:
+    ingredients:
+      - type: caterium_ore
+        per_minute: 24
+      - type: water
+        per_minute: 24
+    outputs:
+      - type: caterium_ingot
+        per_minute: 12
+
+  circuit_board:
+    ingredients:
+      - type: plastic
+        per_minute: 30
+      - type: copper_sheet
+        per_minute: 15
+    outputs:
+      - type: circuit_board
+        per_minute: 7.5
+
+  electrode_circuit_board:
+    ingredients:
+      - type: rubber
+        per_minute: 30
+      - type: petroleum_coke
+        per_minute: 45
+    outputs:
+      - type: circuit_board
+        per_minute: 5
+
+  silicon_circuit_board:
+    ingredients:
+      - type: silica
+        per_minute: 27.5
+      - type: copper_sheet
+        per_minute: 27.5
+    outputs:
+      - type: circuit_board
+        per_minute: 12.5
+
+  caterium_circuit_board:
+    ingredients:
+      - type: quickwire
+        per_minute: 37.5
+      - type: plastic
+        per_minute: 12.5
+    outputs:
+      - type: circuit_board
+        per_minute: 8.75
+
+  compacted_coal:
+    ingredients:
+      - type: coal
+        per_minute: 25
+      - type: sulfur
+        per_minute: 25
+    outputs:
+      - type: compacted_coal
+        per_minute: 25
+
+  computer:
+    ingredients:
+      - type: circuit_board
+        per_minute: 25
+      - type: plastic
+        per_minute: 45
+      - type: cable
+        per_minute: 22.5
+      - type: screw
+        per_minute: 130
+    outputs:
+      - type: computer
+        per_minute: 2.5
+
+  crystal_computer:
+    ingredients:
+      - type: circuit_board
+        per_minute: 7.5
+      - type: crystal_oscillator
+        per_minute: 2.8125
+    outputs:
+      - type: computer
+        per_minute: 2.8125
+
+  caterium_computer:
+    ingredients:
+      - type: circuit_board
+        per_minute: 26.25
+      - type: quickwire
+        per_minute: 105
+      - type: rubber
+        per_minute: 45
+    outputs:
+      - type: computer
+        per_minute: 3.75
+
+  concrete:
+    ingredients:
+      - type: limestone
+        per_minute: 45
+    outputs:
+      - type: concrete
+        per_minute: 15
+
+  rubber_concrete:
+    ingredients:
+      - type: limestone
+        per_minute: 50
+      - type: rubber
+        per_minute: 10
+    outputs:
+      - type: concrete
+        per_minute: 45
+
+  wet_concrete:
+    ingredients:
+      - type: limestone
+        per_minute: 120
+      - type: water
+        per_minute: 100
+    outputs:
+      - type: concrete
+        per_minute: 80
+
+  fine_concrete:
+    ingredients:
+      - type: limestone
+        per_minute: 30
+      - type: silica
+        per_minute: 7.5
+    outputs:
+      - type: concrete
+        per_minute: 25
+
+  cooling_system:
+    ingredients:
+      - type: heat_sink
+        per_minute: 12
+      - type: rubber
+        per_minute: 12
+      - type: water
+        per_minute: 30
+      - type: nitrogen_gas
+        per_minute: 150
+    outputs:
+      - type: cooling_system
+        per_minute: 6
+
+  cooling_device:
+    ingredients:
+      - type: heat_sink
+        per_minute: 9.375
+      - type: motor
+        per_minute: 1.875
+      - type: nitrogen_gas
+        per_minute: 45
+    outputs:
+      - type: cooling_system
+        per_minute: 3.75
+
+  copper_ingot:
+    ingredients:
+      - type: copper_ore
+        per_minute: 30
+    outputs:
+      - type: copper_ingot
+        per_minute: 30
+
+  copper_alloy_ingot:
+    ingredients:
+      - type: copper_ore
+        per_minute: 50
+      - type: iron_ore
+        per_minute: 25
+    outputs:
+      - type: copper_ingot
+        per_minute: 100
+
+  pure_copper_ingot:
+    ingredients:
+      - type: copper_ore
+        per_minute: 15
+      - type: water
+        per_minute: 10
+    outputs:
+      - type: copper_ingot
+        per_minute: 37.5
+
+  copper_powder:
+    ingredients:
+      - type: copper_ingot
+        per_minute: 300
+    outputs:
+      - type: copper_powder
+        per_minute: 50
+
+  copper_sheet:
+    ingredients:
+      - type: copper_ingot
+        per_minute: 20
+    outputs:
+      - type: copper_sheet
+        per_minute: 10
+
+  steamed_copper_sheet:
+    ingredients:
+      - type: copper_ingot
+        per_minute: 22.5
+      - type: water
+        per_minute: 22.5
+    outputs:
+      - type: copper_sheet
+        per_minute: 22.5
+
+  crystal_oscillator:
+    ingredients:
+      - type: quartz_crystal
+        per_minute: 18
+      - type: cable
+        per_minute: 14
+      - type: reinforced_iron_plate
+        per_minute: 2.5
+    outputs:
+      - type: crystal_oscillator
+        per_minute: 1
+
+  insulated_crystal_oscillator:
+    ingredients:
+      - type: quartz_crystal
+        per_minute: 18.75
+      - type: rubber
+        per_minute: 13.125
+      - type: ai_limiter
+        per_minute: 1.875
+    outputs:
+      - type: crystal_oscillator
+        per_minute: 1.875
+
+  electromagnetic_control_rod:
+    ingredients:
+      - type: stator
+        per_minute: 6
+      - type: ai_limiter
+        per_minute: 4
+    outputs:
+      - type: electromagnetic_control_rod
+        per_minute: 4
+
+  electromagnetic_connection_rod:
+    ingredients:
+      - type: stator
+        per_minute: 8
+      - type: high_speed_connector
+        per_minute: 4
+    outputs:
+      - type: electromagnetic_control_rod
+        per_minute: 8
+
+  empty_canister:
+    ingredients:
+      - type: plastic
+        per_minute: 30
+    outputs:
+      - type: empty_canister
+        per_minute: 60
+
+  steel_canister:
+    ingredients:
+      - type: steel_ingot
+        per_minute: 60
+    outputs:
+      - type: empty_canister
+        per_minute: 40
+
+  coated_iron_canister:
+    ingredients:
+      - type: iron_plate
+        per_minute: 30
+      - type: copper_sheet
+        per_minute: 15
+    outputs:
+      - type: empty_canister
+        per_minute: 60
+
+  unpackage_alumina_solution:
+    ingredients:
+      - type: packaged_alumina_solution
+        per_minute: 120
+    outputs:
+      - type: alumina_solution
+        per_minute: 120
+      - type: empty_canister
+        per_minute: 120
+
+  packaged_alumina_solution:
+    ingredients:
+      - type: alumina_solution
+        per_minute: 120
+      - type: empty_canister
+        per_minute: 120
+    outputs:
+      - type: packaged_alumina_solution
+        per_minute: 120
+
+  unpackage_oil:
+    ingredients:
+      - type: packaged_oil
+        per_minute: 60
+    outputs:
+      - type: crude_oil
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+
+  packaged_oil:
+    ingredients:
+      - type: crude_oil
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+    outputs:
+      - type: packaged_oil
+        per_minute: 60
+
+  unpackage_fuel:
+    ingredients:
+      - type: packaged_fuel
+        per_minute: 60
+    outputs:
+      - type: fuel
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+
+  packaged_fuel:
+    ingredients:
+      - type: fuel
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+    outputs:
+      - type: packaged_fuel
+        per_minute: 60
+
+  unpackage_heavy_oil_residue:
+    ingredients:
+      - type: packaged_heavy_oil_residue
+        per_minute: 20
+    outputs:
+      - type: heavy_oil_residue
+        per_minute: 20
+      - type: empty_canister
+        per_minute: 20
+  
+  packaged_heavy_oil_residue:
+    ingredients:
+      - type: heavy_oil_residue
+        per_minute: 20
+      - type: empty_canister
+        per_minute: 20
+    outputs:
+      - type: packaged_heavy_oil_residue
+        per_minute: 20
+
+  unpackage_liquid_biofuel:
+    ingredients:
+      - type: packaged_liquid_biofuel
+        per_minute: 60
+    outputs:
+      - type: liquid_biofuel
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+
+  packaged_liquid_biofuel:
+    ingredients:
+      - type: liquid_biofuel
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+    outputs:
+      - type: packaged_liquid_biofuel
+        per_minute: 60
+
+  unpackage_sulfuric_acid:
+    ingredients:
+      - type: packaged_sulfuric_acid
+        per_minute: 60
+    outputs:
+      - type: sulfuric_acid
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+
+  packaged_sulfuric_acid:
+    ingredients:
+      - type: sulfuric_acid
+        per_minute: 60
+      - type: empty_canister
+        per_minute: 60
+    outputs:
+      - type: packaged_sulfuric_acid
+        per_minute: 60
+
+  unpackage_turbofuel:
+    ingredients:
+      - type: packaged_turbofuel
+        per_minute: 20
+    outputs:
+      - type: turbofuel
+        per_minute: 20
+      - type: empty_canister
+        per_minute: 20
+
+  packaged_turbofuel:
+    ingredients:
+      - type: turbofuel
+        per_minute: 20
+      - type: empty_canister
+        per_minute: 20
+    outputs:
+      - type: packaged_turbofuel
+        per_minute: 20
+
+  unpackage_water:
+    ingredients:
+      - type: packaged_water
+        per_minute: 120
+    outputs:
+      - type: water
+        per_minute: 120
+      - type: empty_canister
+        per_minute: 120
+
+  packaged_water:
+    ingredients:
+      - type: water
+        per_minute: 120
+      - type: empty_canister
+        per_minute: 120
+    outputs:
+      - type: packaged_water
+        per_minute: 120
+
+  empty_fluid_tank:
+    ingredients:
+      - type: aluminum_ingot
+        per_minute: 60
+    outputs:
+      - type: empty_fluid_tank
+        per_minute: 60
+
+  unpackage_nitric_acid:
+    ingredients:
+      - type: packaged_nitric_acid
+        per_minute: 20
+    outputs:
+      - type: nitric_acid
+        per_minute: 20
+      - type: empty_fluid_tank
+        per_minute: 20
+
+  packaged_nitric_acid:
+    ingredients:
+      - type: nitric_acid
+        per_minute: 20
+      - type: empty_fluid_tank
+        per_minute: 20
+    outputs:
+      - type: packaged_nitric_acid
+        per_minute: 20
+
+  unpackage_nitrogen_gas:
+    ingredients:
+      - type: packaged_nitrogen_gas
+        per_minute: 60
+    outputs:
+      - type: nitrogen_gas
+        per_minute: 240
+      - type: empty_fluid_tank
+        per_minute: 60
+
+  packaged_nitrogen_gas:
+    ingredients:
+      - type: nitrogen_gas
+        per_minute: 240
+      - type: empty_fluid_tank
+        per_minute: 60
+    outputs:
+      - type: packaged_nitrogen_gas
+        per_minute: 60
+
+  encased_industrial_beam:
+    ingredients:
+      - type: steel_beam
+        per_minute: 24
+      - type: concrete
+        per_minute: 30
+    outputs:
+      - type: encased_industrial_beam
+        per_minute: 6
+
+  encased_industrial_pipe:
+    ingredients:
+      - type: steel_pipe
+        per_minute: 28
+      - type: concrete
+        per_minute: 20
+    outputs:
+      - type: encased_industrial_beam
+        per_minute: 4
+
+  encased_plutonium_cell:
+    ingredients:
+      - type: plutonium_pellet
+        per_minute: 10
+      - type: concrete
+        per_minute: 20
+    outputs:
+      - type: encased_plutonium_cell
+        per_minute: 5
+
+  instant_plutonium_cell:
+    ingredients:
+      - type: non_fissile_uranium
+        per_minute: 75
+      - type: aluminum_casing
+        per_minute: 10
+    outputs:
+      - type: encased_plutonium_cell
+        per_minute: 10
+
+  encased_uranium_cell:
+    ingredients:
+      - type: uranium
+        per_minute: 50
+      - type: concrete
+        per_minute: 15
+      - type: sulfuric_acid
+        per_minute: 40
+    outputs:
+      - type: encased_uranium_cell
+        per_minute: 25
+      - type: sulfuric_acid
+        per_minute: 10
+
+  infused_uranium_cell:
+    ingredients:
+      - type: uranium
+        per_minute: 25
+      - type: sulfur
+        per_minute: 25
+      - type: silica
+        per_minute: 15
+      - type: quickwire
+        per_minute: 75
+    outputs:
+      - type: encased_uranium_cell
+        per_minute: 20
+
+  fabric:
+    ingredients:
+      - type: mycelia
+        per_minute: 15
+      - type: biomass
+        per_minute: 75
+    outputs:
+      - type: fabric
+        per_minute: 15
+
+  polyester_fabric:
+    ingredients:
+      - type: polymer_resin
+        per_minute: 30
+      - type: water
+        per_minute: 30
+    outputs:
+      - type: fabric
+        per_minute: 30
+
+  fuel:
+    ingredients:
+      - type: crude_oil
+        per_minute: 60
+    outputs:
+      - type: fuel
+        per_minute: 40
+      - type: polymer_resin
+        per_minute: 30
+
+  residual_fuel:
+    ingredients:
+      - type: heavy_oil_residue
+        per_minute: 60
+    outputs:
+      - type: fuel
+        per_minute: 40
+
+  diluted_fuel:
+    ingredients:
+      - type: heavy_oil_residue
+        per_minute: 50
+      - type: water
+        per_minute: 100
+    outputs:
+      - type: fuel
+        per_minute: 100
+
+  fused_modular_frame:
+    ingredients:
+      - type: heavy_modular_frame
+        per_minute: 1.5
+      - type: aluminum_casing
+        per_minute: 75
+      - type: nitrogen_gas
+        per_minute: 37.5
+    outputs:
+      - type: fused_modular_frame
+        per_minute: 1.5
+
+  heat_fused_frame:
+    ingredients:
+      - type: heavy_modular_frame
+        per_minute: 3
+      - type: aluminum_ingot
+        per_minute: 150
+      - type: nitrogen_gas
+        per_minute: 24
+      - type: fuel
+        per_minute: 30
+    outputs:
+      - type: fused_modular_frame
+        per_minute: 3
+
+  heat_sink:
+    ingredients:
+      - type: alclad_aluminum_sheet
+        per_minute: 37.5
+        per_cycle: 5
+      - type: copper_sheet
+        per_minute: 22.5
+        per_cycle: 3
+    outputs:
+      - type: heat_sink
+        per_minute: 7.5
+        per_cycle: 1
+
+  heat_exchanger:
+    ingredients:
+      - type: aluminum_casing
+        per_minute: 30
+        per_cycle: 3
+      - type: rubber
+        per_minute: 30
+        per_cycle: 3
+    outputs:
+      - type: heat_sink
+        per_minute: 10
+        per_cycle: 1
+
+  heavy_modular_frame:
+    ingredients:
+      - type: modular_frame
+        per_minute: 10
+        per_cycle: 5
+      - type: steel_pipe
+        per_minute: 30
+        per_cycle: 15
+      - type: encased_industrial_beam
+        per_minute: 10
+        per_cycle: 5
+      - type: screw
+        per_minute: 200
+        per_cycle: 100
+    outputs:
+      - type: heavy_modular_frame
+        per_minute: 2
+        per_cycle: 1
+
+  heavy_flexible_frame:
+    ingredients:
+      - type: modular_frame
+        per_minute: 18.75
+        per_cycle: 5
+      - type: rubber
+        per_minute: 75
+        per_cycle: 20
+      - type: encased_industrial_beam
+        per_minute: 11.25
+        per_cycle: 3
+      - type: screw
+        per_minute: 390
+        per_cycle: 104
+    outputs:
+      - type: heavy_modular_frame
+        per_minute: 3.75
+        per_cycle: 1
+
+  heavy_encased_frame:
+    ingredients:
+      - type: modular_frame
+        per_minute: 7.5
+        per_cycle: 8
+      - type: encased_industrial_beam
+        per_minute: 9.375
+        per_cycle: 10
+      - type: steel_pipe
+        per_minute: 33.75
+        per_cycle: 36
+      - type: concrete
+        per_minute: 20.625
+        per_cycle: 22
+    outputs:
+      - type: heavy_modular_frame
+        per_minute: 2.8125
+        per_cycle: 3
+
+  high_speed_connector:
+    ingredients:
+      - type: quickwire
+        per_minute: 210
+        per_cycle: 56
+      - type: cable
+        per_minute: 37.5
+        per_cycle: 10
+      - type: circuit_board
+        per_minute: 3.75
+        per_cycle: 1
+    outputs:
+      - type: high_speed_connector
+        per_minute: 3.75
+        per_cycle: 1
+
+  silicon_high_speed_connector:
+    ingredients:
+      - type: quickwire
+        per_minute: 90
+        per_cycle: 60
+      - type: silica
+        per_minute: 37.5
+        per_cycle: 25
+      - type: circuit_board
+        per_minute: 3
+        per_cycle: 2
+    outputs:
+      - type: high_speed_connector
+        per_minute: 3
+        per_cycle: 2
+
+  iron_ingot:
+    ingredients:
+      - type: iron_ore
+        per_minute: 30
+        per_cycle: 1
+    outputs:
+      - type: iron_ingot
+        per_minute: 30
+        per_cycle: 1
+
+  iron_plate:
+    ingredients:
+      - type: iron_ingot
+        per_minute: 30
+    outputs:
+      - type: iron_plate
+        per_minute: 20
+
+  iron_rod:
+    ingredients:
+      - type: iron_ingot
+        per_minute: 15
+    outputs:
+      - type: iron_rod
+        per_minute: 15
+
+  liquid_biofuel:
+    ingredients:
+      - type: solid_biofuel
+        per_minute: 90
+        per_cycle: 6
+      - type: water
+        per_minute: 45
+        per_cycle: 3
+    outputs:
+      - type: liquid_biofuel
+        per_minute: 60
+        per_cycle: 4
+
+  modular_engine:
+    ingredients:
+      - type: motor
+        per_minute: 2
+        per_cycle: 2
+      - type: rubber
+        per_minute: 15
+        per_cycle: 15
+      - type: smart_plating
+        per_minute: 2
+        per_cycle: 2
+    outputs:
+      - type: modular_engine
+        per_minute: 1
+        per_cycle: 1
+
+  modular_frame:
+    ingredients:
+      - type: reinforced_iron_plate
+        per_minute: 3
+        per_cycle: 3
+      - type: iron_rod
+        per_minute: 12
+        per_cycle: 12
+    outputs:
+      - type: modular_frame
+        per_minute: 2
+        per_cycle: 2
+
+  bolted_frame:
+    ingredients:
+      - type: reinforced_iron_plate
+        per_minute: 7.5
+        per_cycle: 3
+      - type: screw
+        per_minute: 140
+        per_cycle: 56
+    outputs:
+      - type: modular_frame
+        per_minute: 5
+        per_cycle: 2
+
+  steeled_frame:
+    ingredients:
+      - type: reinforced_iron_plate
+        per_minute: 2
+        per_cycle: 2
+      - type: steel_pipe
+        per_minute: 10
+        per_cycle: 10
+    outputs:
+      - type: modular_frame
+        per_minute: 3
+        per_cycle: 3
+
+  motor:
+    ingredients:
+      - type: stator
+        per_minute: 10
+        per_cycle: 2
+      - type: rotor
+        per_minute: 10
+        per_cycle: 2
+    outputs:
+      - type: motor
+        per_minute: 5
+        per_cycle: 1
+
+  rigour_motor:
+    ingredients:
+      - type: rotor
+        per_minute: 3.75
+        per_cycle: 3
+      - type: stator
+        per_minute: 3.75
+        per_cycle: 3
+      - type: crystal_oscillator
+        per_minute: 1.25
+        per_cycle: 1
+    outputs:
+      - type: motor
+        per_minute: 7.5
+        per_cycle: 6
+
+  electric_motor:
+    ingredients:
+      - type: electromagnetic_control_rod
+        per_minute: 3.75
+        per_cycle: 1
+      - type: rotor
+        per_minute: 7.5
+        per_cycle: 2
+    outputs:
+      - type: motor
+        per_minute: 7.5
+        per_cycle: 2
+
+  nitric_acid:
+    ingredients:
+      - type: nitrogen_gas
+        per_minute: 120
+        per_cycle: 12
+      - type: water
+        per_minute: 30
+        per_cycle: 3
+      - type: iron_plate
+        per_minute: 10
+        per_cycle: 1
+    outputs:
+      - type: nitric_acid
+        per_minute: 30
+        per_cycle: 3
+
+  non_fissile_uranium:
+    ingredients:
+      - type: uranium_waste
+        per_minute: 37.5
+        per_cycle: 15
+      - type: silica
+        per_minute: 25
+        per_cycle: 10
+      - type: nitric_acid
+        per_minute: 15
+        per_cycle: 6
+      - type: sulfuric_acid
+        per_minute: 15
+        per_cycle: 6
+    outputs:
+      - type: non_fissile_uranium
+        per_minute: 50
+        per_cycle: 20
+      - type: water
+        per_minute: 15
+        per_cycle: 6
+
+  fertile_uranium:
+    ingredients:
+      - type: uranium
+        per_minute: 25
+        per_cycle: 5
+      - type: uranium_waste
+        per_minute: 25
+        per_cycle: 5
+      - type: nitric_acid
+        per_minute: 15
+        per_cycle: 3
+      - type: sulfuric_acid
+        per_minute: 25
+        per_cycle: 5
+    outputs:
+      - type: non_fissile_uranium
+        per_minute: 100
+        per_cycle: 20
+      - type: water
+        per_minute: 40
+        per_cycle: 8
+
+  nuclear_pasta:
+    ingredients:
+      - type: copper_powder
+        per_minute: 100
+        per_cycle: 200
+      - type: pressure_conversion_cube
+        per_minute: 0.5
+        per_cycle: 1
+    outputs:
+      - type: nuclear_pasta
+        per_minute: 0.5
+
+  petroleum_coke:
+    ingredients:
+      - type: heavy_oil_residue
+        per_minute: 40
+        per_cycle: 4
+    outputs:
+      - type: petroleum_coke
+        per_minute: 120
+        per_cycle: 12
+
+  plastic:
+    ingredients:
+      - type: crude_oil
+        per_minute: 30
+        per_cycle: 3
+    outputs:
+      - type: plastic
+        per_minute: 20
+        per_cycle: 2
+      - type: heavy_oil_residue
+        per_minute: 10
+        per_cycle: 1
+
+  residual_plastic:
+    ingredients:
+      - type: polymer_resin
+        per_minute: 60
+        per_cycle: 6
+      - type: water
+        per_minute: 20
+        per_cycle: 2
+    outputs:
+      - type: plastic
+        per_minute: 20
+        per_cycle: 2
+
+  recycled_plastic:
+    ingredients:
+      - type: rubber
+        per_minute: 30
+        per_cycle: 6
+      - type: fuel
+        per_minute: 30
+        per_cycle: 6
+    outputs:
+      - type: plastic
+        per_minute: 60
+        per_cycle: 12
+
+  plutonium_fuel_rod:
+    ingredients:
+      - type: encased_plutonium_cell
+        per_minute: 7.5
+        per_cycle: 30
+      - type: steel_beam
+        per_minute: 4.5
+        per_cycle: 18
+      - type: electromagnetic_control_rod
+        per_minute: 1.5
+        per_cycle: 6
+      - type: heat_sink
+        per_minute: 2.5
+        per_cycle: 10
+    outputs:
+      - type: plutonium_fuel_rod
+        per_minute: 0.25
+        per_cycle: 1
+
+  plutonium_fuel_unit:
+    ingredients:
+      - type: encased_plutonium_cell
+        per_minute: 10
+        per_cycle: 20
+      - type: pressure_conversion_cube
+        per_minute: 0.5
+        per_cycle: 1
+    outputs:
+      - type: plutonium_fuel_rod
+        per_minute: 0.5
+        per_cycle: 1
+
+  plutonium_pellet:
+    ingredients:
+      - type: non_fissile_uranium
+        per_minute: 100
+        per_cycle: 100
+      - type: uranium_waste
+        per_minute: 25
+        per_cycle: 25
+    outputs:
+      - type: plutonium_pellet
+        per_minute: 30
+        per_cycle: 30
+
+  plutonium_waste:
+    ingredients:
+      - type: plutonium_fuel_rod
+        per_minute: 0.1
+        per_cycle: 1
+      - type: water
+        per_minute: 240
+        per_cycle: 2400
+    outputs:
+      - type: plutonium_waste
+        per_minute: 1
+        per_cycle: 10
+
+  polymer_resin:
+    ingredients:
+      - type: crude_oil
+        per_minute: 60
+        per_cycle: 6
+    outputs:
+      - type: polymer_resin
+        per_minute: 130
+        per_cycle: 13
+      - type: heavy_oil_residue
+        per_minute: 20
+        per_cycle: 2
+
+  heavy_oil_residue:
+    ingredients:
+      - type: crude_oil
+        per_minute: 30
+        per_cycle: 3
+    outputs:
+      - type: heavy_oil_residue
+        per_minute: 40
+        per_cycle: 4
+      - type: polymer_resin
+        per_minute: 20
+        per_cycle: 2
+
+  pressure_conversion_cube:
+    ingredients:
+      - type: fused_modular_frame
+        per_minute: 1
+        per_cycle: 1
+      - type: radio_control_unit
+        per_minute: 2
+        per_cycle: 2
+    outputs:
+      - type: pressure_conversion_cube
+        per_minute: 1
+        per_cycle: 1
+
+  quartz_crystal:
+    ingredients:
+      - type: raw_quartz
+        per_minute: 37.5
+        per_cycle: 5
+    outputs:
+      - type: quartz_crystal
+        per_minute: 22.5
+        per_cycle: 3
+
+  pure_quartz_crystal:
+    ingredients:
+      - type: raw_quartz
+        per_minute: 67.5
+        per_cycle: 9
+      - type: water
+        per_minute: 37.5
+        per_cycle: 5
+    outputs:
+      - type: quartz_crystal
+        per_minute: 52.5
+        per_cycle: 7
+
+  quickwire:
+    ingredients:
+      - type: caterium_ingot
+        per_minute: 12
+        per_cycle: 1
+    outputs:
+      - type: quickwire
+        per_minute: 60
+        per_cycle: 5
+
+  fused_quickwire:
+    ingredients:
+      - type: caterium_ingot
+        per_minute: 7.5
+        per_cycle: 1
+      - type: copper_ingot
+        per_minute: 37.5
+        per_cycle: 5
+    outputs:
+      - type: quickwire
+        per_minute: 90
+        per_cycle: 12
+
+  radio_control_unit:
+    ingredients:
+      - type: aluminum_casing
+        per_minute: 40
+        per_cycle: 32
+      - type: crystal_oscillator
+        per_minute: 1.25
+        per_cycle: 1
+      - type: computer
+        per_minute: 1.25
+        per_cycle: 1
+    outputs:
+      - type: radio_control_unit
+        per_minute: 2.5
+        per_cycle: 2
+
+  radio_control_system:
+    ingredients:
+      - type: crystal_oscillator
+        per_minute: 1.5
+        per_cycle: 1
+      - type: circuit_board
+        per_minute: 15
+        per_cycle: 10
+      - type: aluminum_casing
+        per_minute: 90
+        per_cycle: 60
+      - type: rubber
+        per_minute: 45
+        per_cycle: 30
+    outputs:
+      - type: radio_control_unit
+        per_minute: 4.5
+        per_cycle: 3
+
+  radio_connection_unit:
+    ingredients:
+      - type: heat_sink
+        per_minute: 15
+        per_cycle: 4
+      - type: high_speed_connector
+        per_minute: 7.5
+        per_cycle: 2
+      - type: quartz_crystal
+        per_minute: 45
+        per_cycle: 12
+    outputs:
+      - type: radio_control_unit
+        per_minute: 3.75
+        per_cycle: 1
+
+  reinforced_iron_plate:
+    ingredients:
+      - type: iron_plate
+        per_minute: 30
+        per_cycle: 6
+      - type: screw
+        per_minute: 60
+        per_cycle: 12
+    outputs:
+      - type: reinforced_iron_plate
+        per_minute: 5
+        per_cycle: 1
+
+  adhered_iron_plate:
+    ingredients:
+      - type: iron_plate
+        per_minute: 11.25
+        per_cycle: 3
+      - type: rubber
+        per_minute: 3.75
+        per_cycle: 1
+    outputs:
+      - type: reinforced_iron_plate
+        per_minute: 3.75
+        per_cycle: 1
+
+  bolted_iron_plate:
+    ingredients:
+      - type: iron_plate
+        per_minute: 90
+        per_cycle: 18
+      - type: screw
+        per_minute: 250
+        per_cycle: 50
+    outputs:
+      - type: reinforced_iron_plate
+        per_minute: 15
+        per_cycle: 3
+
+  stitched_iron_plate:
+    ingredients:
+      - type: iron_plate
+        per_minute: 18.75
+        per_cycle: 10
+      - type: wire
+        per_minute: 37.5
+        per_cycle: 20
+    outputs:
+      - type: reinforced_iron_plate
+        per_minute: 5.625
+        per_cycle: 3
+
+  rotor:
+    ingredients:
+      - type: iron_rod
+        per_minute: 20
+        per_cycle: 5
+      - type: screw
+        per_minute: 100
+        per_cycle: 25
+    outputs:
+      - type: rotor
+        per_minute: 4
+        per_cycle: 1
+
+  copper_rotor:
+    ingredients:
+      - type: copper_sheet
+        per_minute: 22.5
+        per_cycle: 6
+      - type: screw
+        per_minute: 195
+        per_cycle: 52
+    outputs:
+      - type: rotor
+        per_minute: 11.25
+        per_cycle: 3
+
+  steel_rotor:
+    ingredients:
+      - type: steel_pipe
+        per_minute: 10
+        per_cycle: 2
+      - type: wire
+        per_minute: 30
+        per_cycle: 6
+    outputs:
+      - type: rotor
+        per_minute: 5
+        per_cycle: 1
+
+  rubber:
+    ingredients:
+      - type: crude_oil
+        per_minute: 30
+        per_cycle: 3
+    outputs:
+      - type: rubber
+        per_minute: 20
+        per_cycle: 2
+      - type: heavy_oil_residue
+        per_minute: 20
+        per_cycle: 2
+
+  residual_rubber:
+    ingredients:
+      - type: polymer_resin
+        per_minute: 40
+        per_cycle: 4
+      - type: water
+        per_minute: 40
+        per_cycle: 4
+    outputs:
+      - type: rubber
+        per_minute: 20
+        per_cycle: 2
+
+  recycled_rubber:
+    ingredients:
+      - type: plastic
+        per_minute: 30
+        per_cycle: 6
+      - type: fuel
+        per_minute: 30
+        per_cycle: 6
+    outputs:
+      - type: rubber
+        per_minute: 60
+        per_cycle: 12
+
+  screw:
+    ingredients:
+      - type: iron_rod
+        per_minute: 10
+    outputs:
+      - type: screw
+        per_minute: 40
+
+  alumina_solution:
+    ingredients:
+      - type: bauxite
+        per_minute: 120
+        per_cycle: 12
+      - type: water
+        per_minute: 180
+        per_cycle: 18
+    outputs:
+      - type: alumina_solution
+        per_minute: 120
+        per_cycle: 12
+      - type: silica
+        per_minute: 50
+        per_cycle: 5
+
+  silica:
+    ingredients:
+      - type: raw_quartz
+        per_minute: 22.5
+        per_cycle: 3
+    outputs:
+      - type: silica
+        per_minute: 37.5
+        per_cycle: 5
+
+  cheap_silica:
+    ingredients:
+      - type: raw_quartz
+        per_minute: 11.25
+        per_cycle: 3
+      - type: limestone
+        per_minute: 18.75
+        per_cycle: 5
+    outputs:
+      - type: silica
+        per_minute: 26.25
+        per_cycle: 7
+
+  smart_plating:
+    ingredients:
+      - type: reinforced_iron_plate
+        per_minute: 2
+        per_cycle: 1
+      - type: rotor
+        per_minute: 2
+        per_cycle: 1
+    outputs:
+      - type: smart_plating
+        per_minute: 2
+        per_cycle: 1
+
+  plastic_smart_plating:
+    ingredients:
+      - type: reinforced_iron_plate
+        per_minute: 2.5
+        per_cycle: 1
+      - type: rotor
+        per_minute: 2.5
+        per_cycle: 1
+      - type: plastic
+        per_minute: 7.5
+        per_cycle: 3
+    outputs:
+      - type: smart_plating
+        per_minute: 5
+        per_cycle: 2
+
+  stator:
+    ingredients:
+      - type: steel_pipe
+        per_minute: 15
+        per_cycle: 3
+      - type: wire
+        per_minute: 40
+        per_cycle: 8
+    outputs:
+      - type: stator
+        per_minute: 5
+        per_cycle: 1
+
+  quickwire_stator:
+    ingredients:
+      - type: steel_pipe
+        per_minute: 16
+        per_cycle: 4
+      - type: quickwire
+        per_minute: 60
+        per_cycle: 15
+    outputs:
+      - type: stator
+        per_minute: 8
+        per_cycle: 2
+
+  steel_beam:
+    ingredients:
+      - type: steel_ingot
+        per_minute: 60
+        per_cycle: 4
+    outputs:
+      - type: steel_beam
+        per_minute: 15
+        per_cycle: 1
+
+  steel_ingot:
+    ingredients:
+      - type: iron_ore
+        per_minute: 45
+        per_cycle: 3
+      - type: coal
+        per_minute: 45
+        per_cycle: 3
+    outputs:
+      - type: steel_ingot
+        per_minute: 45
+        per_cycle: 3
+
+  coke_steel_ingot:
+    ingredients:
+      - type: iron_ore
+        per_minute: 75
+        per_cycle: 15
+      - type: petroleum_coke
+        per_minute: 75
+        per_cycle: 15
+    outputs:
+      - type: steel_ingot
+        per_minute: 100
+        per_cycle: 20
+
+  compacted_steel_ingot:
+    ingredients:
+      - type: iron_ore
+        per_minute: 22.5
+        per_cycle: 6
+      - type: compacted_coal
+        per_minute: 11.25
+        per_cycle: 3
+    outputs:
+      - type: steel_ingot
+        per_minute: 37.5
+        per_cycle: 10
+
+  solid_steel_ingot:
+    ingredients:
+      - type: iron_ingot
+        per_minute: 40
+        per_cycle: 2
+      - type: coal
+        per_minute: 40
+        per_cycle: 2
+    outputs:
+      - type: steel_ingot
+        per_minute: 60
+        per_cycle: 3
+
+  steel_pipe:
+    ingredients:
+      - type: steel_ingot
+        per_minute: 30
+        per_cycle: 3
+    outputs:
+      - type: steel_pipe
+        per_minute: 20
+        per_cycle: 2
+
+  supercomputer:
+    ingredients:
+      - type: computer
+        per_minute: 3.75
+        per_cycle: 2
+      - type: ai_limiter
+        per_minute: 3.75
+        per_cycle: 2
+      - type: high_speed_connector
+        per_minute: 5.625
+        per_cycle: 3
+      - type: plastic
+        per_minute: 52.5
+        per_cycle: 28
+    outputs:
+      - type: supercomputer
+        per_minute: 1.875
+        per_cycle: 1
+
+  oc_supercomputer:
+    ingredients:
+      - type: radio_control_unit
+        per_minute: 9
+        per_cycle: 3
+      - type: cooling_system
+        per_minute: 9
+        per_cycle: 3
+    outputs:
+      - type: supercomputer
+        per_minute: 3
+        per_cycle: 1
+
+  super_state_computer:
+    ingredients:
+      - type: computer
+        per_minute: 3.6
+        per_cycle: 3
+      - type: electromagnetic_control_rod
+        per_minute: 2.4
+        per_cycle: 2
+      - type: battery
+        per_minute: 24
+        per_cycle: 20
+      - type: wire
+        per_minute: 54
+        per_cycle: 45
+    outputs:
+      - type: supercomputer
+        per_minute: 2.4
+        per_cycle: 2
+
+  turbo_motor:
+    ingredients:
+      - type: cooling_system
+        per_minute: 7.5
+        per_cycle: 4
+      - type: radio_control_unit
+        per_minute: 3.75
+        per_cycle: 2
+      - type: motor
+        per_minute: 7.5
+        per_cycle: 4
+      - type: rubber
+        per_minute: 45
+        per_cycle: 24
+    outputs:
+      - type: turbo_motor
+        per_minute: 1.875
+        per_cycle: 1
+
+  turbo_electric_motor:
+    ingredients:
+      - type: motor
+        per_minute: 6.5625
+        per_cycle: 7
+      - type: radio_control_unit
+        per_minute: 8.4375
+        per_cycle: 9
+      - type: electromagnetic_control_rod
+        per_minute: 4.6875
+        per_cycle: 5
+      - type: rotor
+        per_minute: 6.5625
+        per_cycle: 7
+    outputs:
+      - type: turbo_motor
+        per_minute: 2.8125
+        per_cycle: 3
+
+  turbo_pressure_motor:
+    ingredients:
+      - type: motor
+        per_minute: 7.5
+        per_cycle: 4
+      - type: packaged_nitrogen_gas
+        per_minute: 45
+        per_cycle: 24
+      - type: pressure_conversion_cube
+        per_minute: 1.875
+        per_cycle: 1
+      - type: stator
+        per_minute: 15
+        per_cycle: 8
+    outputs:
+      - type: turbo_motor
+        per_minute: 3.75
+        per_cycle: 2
+
+  turbofuel:
+    ingredients:
+      - type: fuel
+        per_minute: 22.5
+        per_cycle: 6
+      - type: compacted_coal
+        per_minute: 15
+        per_cycle: 4
+    outputs:
+      - type: turbofuel
+        per_minute: 18.75
+        per_cycle: 5
+
+  turbo_heavy_fuel:
+    ingredients:
+      - type: heavy_oil_residue
+        per_minute: 37.5
+        per_cycle: 5
+      - type: compacted_coal
+        per_minute: 30
+        per_cycle: 4
+    outputs:
+      - type: turbofuel
+        per_minute: 30
+        per_cycle: 4
+
+  turbo_blend_fuel:
+    ingredients:
+      - type: fuel
+        per_minute: 15
+        per_cycle: 2
+      - type: heavy_oil_residue
+        per_minute: 30
+        per_cycle: 4
+      - type: sulfur
+        per_minute: 22.5
+        per_cycle: 3
+      - type: coal
+        per_minute: 22.5
+        per_cycle: 3
+    outputs:
+      - type: turbofuel
+        per_minute: 45
+        per_cycle: 6
+
+  uranium_fuel_rod:
+    ingredients:
+      - type: encased_uranium_cell
+        per_minute: 20
+        per_cycle: 50
+      - type: encased_industrial_beam
+        per_minute: 1.2
+        per_cycle: 3
+      - type: electromagnetic_control_rod
+        per_minute: 2
+        per_cycle: 5
+    outputs:
+      - type: uranium_fuel_rod
+        per_minute: 0.4
+        per_cycle: 1
+
+  uranium_fuel_unit:
+    ingredients:
+      - type: encased_uranium_cell
+        per_minute: 20
+        per_cycle: 100
+      - type: electromagnetic_control_rod
+        per_minute: 2
+        per_cycle: 10
+      - type: crystal_oscillator
+        per_minute: 0.6
+        per_cycle: 3
+      - type: beacon
+        per_minute: 1.2
+        per_cycle: 6
+    outputs:
+      - type: uranium_fuel_rod
+        per_minute: 0.6
+        per_cycle: 3
+
+  uranium_waste:
+    ingredients:
+      - type: uranium_fuel_rod
+        per_minute: 0.2
+        per_cycle: 1
+      - type: water
+        per_minute: 240
+        per_cycle: 1200
+    outputs:
+      - type: uranium_waste
+        per_minute: 10
+        per_cycle: 50
+
+  versatile_framework:
+    ingredients:
+      - type: modular_frame
+        per_minute: 2.5
+        per_cycle: 1
+      - type: steel_beam
+        per_minute: 30
+        per_cycle: 12
+    outputs:
+      - type: versatile_framework
+        per_minute: 5
+        per_cycle: 2
+
+  flexible_framework:
+    ingredients:
+      - type: modular_frame
+        per_minute: 3.75
+        per_cycle: 1
+      - type: steel_beam
+        per_minute: 22.5
+        per_cycle: 6
+      - type: rubber
+        per_minute: 30
+        per_cycle: 8
+    outputs:
+      - type: versatile_framework
+        per_minute: 7.5
+        per_cycle: 2
+
+  wire:
+    ingredients:
+      - type: copper_ingot
+        per_minute: 15
+        per_cycle: 1
+    outputs:
+      - type: wire
+        per_minute: 30
+        per_cycle: 2
+
+  fused_wire:
+    ingredients:
+      - type: copper_ingot
+        per_minute: 12
+        per_cycle: 4
+      - type: caterium_ingot
+        per_minute: 3
+        per_cycle: 1
+    outputs:
+      - type: wire
+        per_minute: 90
+        per_cycle: 30
+
+  iron_wire:
+    ingredients:
+      - type: iron_ingot
+        per_minute: 12.5
+        per_cycle: 5
+    outputs:
+      - type: wire
+        per_minute: 22.5
+        per_cycle: 9
+
+  caterium_wire:
+    ingredients:
+      - type: caterium_ingot
+        per_minute: 15
+        per_cycle: 1
+    outputs:
+      - type: wire
+        per_minute: 120
+        per_cycle: 8

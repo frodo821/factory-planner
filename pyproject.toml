@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "factory_\u007f-planner"
+version = "0.1.0"
+description = ""
+authors = ["frodo821 <sakaic2003@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyYAML = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.6.1"
+yapf = "^0.40.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

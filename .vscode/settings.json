@@ -1,0 +1,14 @@
+{
+  "yaml.schemas": {
+    "schema.json": [
+      "satisfactory/recipes.yaml",
+      "satisfactory/buildings.yaml",
+      "satisfactory/items.yaml",
+    ]
+  },
+  "cSpell.words": [
+    "biofuel",
+    "turbofuel",
+    "unpackage"
+  ]
+}

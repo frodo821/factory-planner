@@ -1,0 +1,47 @@
+node_defs:
+  constructor:
+    type: constructor
+    name: Constructor
+  assembler:
+    type: constructor
+    name: Assembler
+  manufacturer:
+    type: constructor
+    name: Manufacturer
+  blender:
+    type: constructor
+    name: Blender
+  refinery:
+    type: constructor
+    name: Refinery
+  packager:
+    type: constructor
+    name: Packager
+  particle_accelerator:
+    type: constructor
+    name: Particle Accelerator
+  nuclear_power_plant:
+    type: constructor
+    name: Nuclear Power Plant
+  smelter:
+    type: constructor
+    name: Smelter
+  foundry:
+    type: constructor
+    name: Foundry
+  fluid_buffer:
+    type: storage
+    name: Fluid Buffer
+    slots: 400
+  industrial_fluid_buffer:
+    type: storage
+    name: Industrial Fluid Buffer
+    slots: 2400
+  storage_container:
+    type: storage
+    name: Storage Container
+    slots: 24
+  industrial_storage_container:
+    type: storage
+    name: Industrial Storage Container
+    slots: 48
